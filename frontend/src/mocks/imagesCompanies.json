@@ -1,0 +1,21 @@
+{
+    "elementos_1": {
+        "aluma" : {
+            "id" : 1,
+            "img_Url" : "/images/aluma.jpg",
+            "title":"aluma"
+        },
+        "peri": {
+            "id" : 2,
+            "img_Url":"/images/peri.jpg",
+            "title": "aluma"
+        }, 
+        "doka": {
+            "id" : 3,
+            "img_Url":"/images/doka.png",
+            "title":"doka"
+        }
+        
+    }
+   
+}

@@ -1,0 +1,24 @@
+{
+    "elements": {
+        "bathurst" : {
+            "id" : 1,
+            "img_Url" : "/images/bathurst.png",
+            "title":"Bathurst Project",
+            "description" : "Residential Aparments in GTA"
+        },
+        "pickering": {
+            "id" : 2,
+            "img_Url":"/images/pickering.png",
+            "title": "Pickering Houses Basement",
+            "description" : "Residential Aparments in GTA"
+        }, 
+        "etobicoke": {
+            "id" : 3,
+            "img_Url":"/images/etobicoke.png",
+            "title":"Etobicoke Apartments",
+            "description" : "Residential Aparments in GTA"
+        }
+        
+    }
+   
+}
