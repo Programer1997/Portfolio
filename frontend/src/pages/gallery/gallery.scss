@@ -1,0 +1,54 @@
+.galleryExperience {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    justify-content: space-around;
+    margin-top: 5%;
+  
+    .galleryText {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      // código para mantener fija la posición del título "Gallery" mientras hago scroll hacia abajo
+      position: sticky;
+      top: 60px;
+      max-height: 30vh;
+      overflow-y: auto;
+  
+      h2 {
+        width: 80%;
+        margin: 0;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+  
+      p {
+        margin: 0;
+        width: 80%;
+        font-family: "Source Code Pro", monospace;
+      }
+    }
+  
+    .galleryExamples {
+        width: 60%;
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        
+      img {
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .bigImage {
+        
+    }
+  
+     
+    }
+  }
+  

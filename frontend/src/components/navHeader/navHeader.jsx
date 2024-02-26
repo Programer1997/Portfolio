@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navHeader.scss";
 
 export default function navHeader() {
@@ -6,13 +7,23 @@ export default function navHeader() {
     <>
       <header>
         <div className="headerContainer">
-          <h2>AV.</h2>
+          <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+            <h2>AV.</h2>
+          </Link>
           <nav>
             <ul>
-              <li>Work</li>
-              <li>Gallery</li>
-              <li>About</li>
-              <li className="resume">Resume</li>
+              <Link to="/Work" style={{ textDecoration: "none" }}>
+                <li>Work</li>
+              </Link>
+              <Link to="/gallery" style={{ textDecoration: "none" }}>
+                <li>Gallery</li>
+              </Link>
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                <li>About</li>
+              </Link>
+              <Link to="/resume" style={{ textDecoration: "none" }}>
+                <li className="resume">Resume</li>
+              </Link>
             </ul>
           </nav>
         </div>
