@@ -8,6 +8,7 @@ export default function resume() {
   return (
     <>
       <Header />
+
       <Footer />
     </>
   );
