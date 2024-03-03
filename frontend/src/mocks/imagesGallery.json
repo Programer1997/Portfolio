@@ -1,0 +1,25 @@
+{
+    "elements": {
+        "bathurst" : {
+            "id" : 1,
+            "img_Url" : "/images/pickering.png",
+            "imageSize" : "big"
+            
+        },
+        "pickering": {
+            "id" : 2,
+            "img_Url":"/images/bathurst.png",
+            "imageSize" : "small"
+            
+        }, 
+        "etobicoke": {
+            "id" : 3,
+            "img_Url":"/images/etobicoke.png",
+            "imageSize" : "small"
+            
+        }
+        
+        
+    }
+   
+}
