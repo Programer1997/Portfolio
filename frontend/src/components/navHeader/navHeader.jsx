@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navHeader.scss";
 
-export default function navHeader() {
+export default function NavHeader() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenu = () => {
+    if (menuOpen === false) {
+      setMenuOpen(true);
+    } else {
+      setMenuOpen(false);
+    }
+  };
   return (
     <>
       <header>
@@ -10,8 +19,8 @@ export default function navHeader() {
           <Link to="/" style={{ color: "black", textDecoration: "none" }}>
             <h2>AV.</h2>
           </Link>
-          <nav>
-            <ul>
+          <nav className={menuOpen ? "navMenuOpen" : ""}>
+            <ul onClick={handleMenu}>
               <Link to="/Work" style={{ textDecoration: "none" }}>
                 <li>Work</li>
               </Link>
@@ -26,6 +35,11 @@ export default function navHeader() {
               </Link>
             </ul>
           </nav>
+          <div className="toggleMenu" onClick={handleMenu}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
         </div>
       </header>
     </>

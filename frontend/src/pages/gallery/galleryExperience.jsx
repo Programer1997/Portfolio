@@ -5,11 +5,14 @@ export default function GalleryExperience(props) {
   return (
     <>
       {
-        <img
-          src={props.imgUrl}
-          alt="something is wrong"
-          className={props.size === "big" ? "bigImage" : ""}
-        />
+        <div className="galleryItem">
+          <img
+            src={props.imgUrl}
+            alt="something is wrong"
+            className={props.size === "big" ? "bigImage" : ""}
+          />
+          <h3 className="galleryTitle">{`Imagen ${props.index}`}</h3>
+        </div>
       }
     </>
   );

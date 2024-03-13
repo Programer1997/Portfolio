@@ -15,23 +15,18 @@ export default function gallery() {
           <p className="text">Exploring the world through images.</p>
         </div>
         <div className="galleryExamples">
-          {Object.values(GalleryExperienceInfo.elements).map((element) => {
-            return element.imageSize === "big" ? (
-              <GalleryExperience
-                key={element.id}
-                imgUrl={element.img_Url}
-                size={element.imageSize}
-              />
-            ) : (
-              <div>
+          {Object.values(GalleryExperienceInfo.elements).map(
+            (element, index) => {
+              return (
                 <GalleryExperience
                   key={element.id}
                   imgUrl={element.img_Url}
                   size={element.imageSize}
+                  index={index}
                 />
-              </div>
-            );
-          })}
+              );
+            }
+          )}
         </div>
       </div>
 
