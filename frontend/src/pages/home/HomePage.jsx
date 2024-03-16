@@ -3,10 +3,11 @@ import FooterPage from "../../components/Footer/footer.jsx";
 import HeaderPage from "../../components/navHeader/navHeader.jsx";
 import HomePage from "./home.jsx";
 
-export default function HomePageReal() {
+export default function HomePageReal(props) {
+  const { modalState, setModalState } = props;
   return (
     <>
-      <HeaderPage />
+      <HeaderPage modalState={modalState} setModalState={setModalState} />
       <HomePage color="false" />
       {
         //<img src="../images/world.ico" className="App-logo" alt="new image" />

@@ -55,9 +55,7 @@ header {
                 }
             }
         }
-        .navMenuOpen{
-                display: none;
-        }
+        
         .toggleMenu{
             display: none;
         }
@@ -72,15 +70,7 @@ header {
             nav{
                 display: none;
             }
-            .navMenuOpen{
-                ul {
-                    li{
-                        
-                    }
-                }
-
-
-            }
+           
             .toggleMenu{
                 width: 20%;
                 display: flex;

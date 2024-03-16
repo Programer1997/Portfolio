@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./navHeader.scss";
 
-export default function NavHeader() {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function NavHeader(props) {
+  //const [menuOpen, setMenuOpen] = useState(false);
+  const { modalState, setModalState } = props;
 
-  const handleMenu = () => {
-    if (menuOpen === false) {
-      setMenuOpen(true);
+  const handleModalMenu = () => {
+    if (modalState === false) {
+      setModalState(true);
     } else {
-      setMenuOpen(false);
+      setModalState(false);
     }
   };
   return (
@@ -19,8 +20,8 @@ export default function NavHeader() {
           <Link to="/" style={{ color: "black", textDecoration: "none" }}>
             <h2>AV.</h2>
           </Link>
-          <nav className={menuOpen ? "navMenuOpen" : ""}>
-            <ul onClick={handleMenu}>
+          <nav>
+            <ul>
               <Link to="/Work" style={{ textDecoration: "none" }}>
                 <li>Work</li>
               </Link>
@@ -35,7 +36,7 @@ export default function NavHeader() {
               </Link>
             </ul>
           </nav>
-          <div className="toggleMenu" onClick={handleMenu}>
+          <div className="toggleMenu" onClick={handleModalMenu}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
