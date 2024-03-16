@@ -22,6 +22,30 @@ footer {
     }
 
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 415px) {
+    footer { 
+        //width: 100%;
+        //background-color:rgb(36,36,38);
+        //padding: 5px;
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: center;
+        
+        .footerContainer { 
+            //width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .name { 
+                //color: white;
+                
+            }
+            .email { 
+                //color: white;
+        
+            }
     
+        }
+    
+    }
 }
