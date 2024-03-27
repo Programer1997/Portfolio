@@ -16,6 +16,24 @@
             "title":"doka"
         }
         
+    },
+    "elementos_2": {
+        "aluma" : {
+            "id" : 1,
+            "img_Url" : "/images/aluma.png",
+            "title":"aluma"
+        },
+        "peri": {
+            "id" : 2,
+            "img_Url":"/images/peri.png",
+            "title": "aluma"
+        }, 
+        "doka": {
+            "id" : 3,
+            "img_Url":"/images/doka.png",
+            "title":"doka"
+        }
+        
     }
    
 }

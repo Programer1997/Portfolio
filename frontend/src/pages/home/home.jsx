@@ -1,4 +1,4 @@
-//import react from "react";
+//import { useState } from "react";
 import HomeTable from "../../components/HomeTable/HomeTable.jsx";
 import CompaniesImg from "./homeCompaniesExperiencies.jsx";
 import CompaniesInfo from "../../mocks/imagesCompanies.json";
@@ -7,10 +7,12 @@ import WorkExperience from "./homeWorkExperience";
 
 import "./home.scss";
 
-const HomePage = () => {
+const HomePage = (props) => {
   //console.log(Object.values(CompaniesInfo.elementos_1));
-  //console.log(CompaniesInfo);
-  console.log(WorkExperienceInfo);
+  //console.log(CompaniesInfo.elementos_1);
+  //console.log(CompaniesInfo.elementos_2);
+  //console.log(WorkExperienceInfo);
+  const { setSelectedElement } = props;
 
   return (
     <>
@@ -38,11 +40,11 @@ const HomePage = () => {
           innovative solutions.
         </h1>
         <div className="companiesExperiencie">
-          {Object.values(CompaniesInfo.elementos_1).map((element) => {
+          {Object.values(CompaniesInfo.elementos_2).map((element) => {
             return <CompaniesImg key={element.id} imgUrl={element.img_Url} />;
           })}
         </div>
-        <div className="workExperience">
+        <div className="workExperience" id="workSection">
           <div className="workText">
             <h2 className="workTitle">Work</h2>
             <p className="text">
@@ -57,6 +59,10 @@ const HomePage = () => {
                   title={element.title}
                   description={element.description}
                   imgUrl={element.img_Url}
+                  //elementoSeleccionado={selectedElement}
+                  workExperienceSelected={() => {
+                    setSelectedElement(element.leyend);
+                  }}
                 />
               );
             })}

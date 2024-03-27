@@ -22,9 +22,9 @@ export default function NavHeader(props) {
           </Link>
           <nav>
             <ul>
-              <Link to="/Work" style={{ textDecoration: "none" }}>
+              <a href="/#workSection">
                 <li>Work</li>
-              </Link>
+              </a>
               <Link to="/gallery" style={{ textDecoration: "none" }}>
                 <li>Gallery</li>
               </Link>

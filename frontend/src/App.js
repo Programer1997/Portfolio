@@ -13,18 +13,21 @@ import Work from './pages/work/work.jsx';
 
 function App() {
   const [modalMenu,setModalMenu] = useState(false);
+  const [selectedElement, setSelectedElement] = useState("");
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePageReal 
+          setSelectedElement = {setSelectedElement} 
+          selectedElement={selectedElement}
           modalState = {modalMenu}
           setModalState = {setModalMenu}
         />} />
         <Route path='/gallery' element={<Gallery/>} />
         <Route path='/About' element={<About />} />
         {/*<Route path='/work/:id' element={<Work />} />*/}
-        {<Route path='/work' element={<Work />} />}
+        {<Route path='/work' element={<Work setSelectedElement = {setSelectedElement} selectedElement={selectedElement} />} />}
         <Route exact path='/resume' element={<Resume />} />
       </Routes>
     </BrowserRouter>
