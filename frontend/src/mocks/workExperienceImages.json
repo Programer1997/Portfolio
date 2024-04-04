@@ -22,5 +22,29 @@
             "leyend"  : "etobicoke"
         }
         
+    },
+    "elements_2": {
+        "holderTester" : {
+            "id" : 1,
+            "img_Url" : "/images/machine3.jpg",
+            "title":"Holder Verification Equipment",
+            "description" : "Holder Verification Equipment for Fakra Coaxial Connectors",
+            "leyend" : "bathurst"
+        },
+        "demoPLC": {
+            "id" : 2,
+            "img_Url":"/images/pickering.png",
+            "title": "Pickering Houses Basement",
+            "description" : "Residential Aparments in GTA",
+            "leyend"  :"pickering"
+        }, 
+        "labview": {
+            "id" : 3,
+            "img_Url":"/images/etobicoke.png",
+            "title":"Etobicoke Apartments",
+            "description" : "Residential Aparments in GTA",
+            "leyend"  : "etobicoke"
+        }
+        
     }
 }

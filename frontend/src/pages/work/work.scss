@@ -1,0 +1,91 @@
+
+
+//Work One  - Desgin 
+.projectHomePage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    .projectPresentation{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h2 {
+            margin: 0;
+            margin-top: 3%;
+        }
+        p {
+
+        }
+        img{
+            width: 100%;
+            max-height: 70vh;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        
+    }
+.context{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    .text {
+        width: 60%;
+        
+        h3{
+           text-align: start; 
+        }
+        p{
+            text-align: justify;
+            
+        }
+        
+    }
+    .projectInfo {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .role {
+            width: 50%;
+            h3{
+                text-align: start;
+                
+            }
+            p{
+                text-align: start;
+                
+            }
+            
+        }
+        .team{
+            width: 50%;
+            h3{
+                text-align: start;
+                
+            }
+            p{
+                text-align: start;
+                
+            }
+            
+        }
+        .timeline {
+            width: 50%;
+            h3{
+                text-align: start; 
+            }
+            p{
+                text-align: start;
+            }
+
+        }
+
+    }
+
+}
+
+}

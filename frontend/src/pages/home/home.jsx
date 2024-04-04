@@ -52,7 +52,7 @@ const HomePage = (props) => {
             </p>
           </div>
           <div className="workExamples">
-            {Object.values(WorkExperienceInfo.elements).map((element) => {
+            {Object.values(WorkExperienceInfo.elements_2).map((element) => {
               return (
                 <WorkExperience
                   key={element.id}
