@@ -6,8 +6,9 @@ const HomeWorkExperience = (props) => {
   const { workExperienceSelected } = props;
 
   const handleClick = () => {
-    console.log(`hi since img ${props.title}`);
+    //console.log(`hi since img ${props.title}`);
     workExperienceSelected();
+    window.scrollTo(0, 0);
     navigate("/work");
   };
   return (

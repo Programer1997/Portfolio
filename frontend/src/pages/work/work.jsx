@@ -5,21 +5,41 @@ import Footer from "../../components/Footer/footer.jsx";
 
 //Imports components to diffferentes experience job work done  :
 import WorkOne from "./workOne.jsx";
-import WorkTwo from "./workTwo.jsx";
-import WorkThree from "./workThree.jsx";
+//import WorkTwo from "./workTwo.jsx";
+//import WorkThree from "./workThree.jsx";
+import workExperienceImages from "../../mocks/workExperienceImages.json";
 
 export default function Work(props) {
   //const [selectedElement, setSelectedElement] = useState("bathurst");
   const { selectedElement } = props;
+  //console.log(workExperienceImages.elements_2.holderTester.holderTesterProcess);
 
   const selectedWork = () => {
     switch (selectedElement) {
       case "bathurst":
-        return <WorkOne />;
+        return (
+          <WorkOne
+            experienceProcessObject={
+              workExperienceImages.elements_2.holderTester.holderTesterProcess
+            }
+          />
+        );
       case "pickering":
-        return <WorkTwo />;
+        return (
+          <WorkOne
+            experienceProcessObject={
+              workExperienceImages.elements_2.demoPLC.holderTesterProcess
+            }
+          />
+        );
       case "etobicoke":
-        return <WorkThree />;
+        return (
+          <WorkOne
+            experienceProcessObject={
+              workExperienceImages.elements_2.labview.holderTesterProcess
+            }
+          />
+        );
       default:
         return <div>Nothing to display, try again later or call us !</div>;
     }
