@@ -27,14 +27,8 @@ export default function about() {
         <div className="aboutTopycs">
           <div className="aboutMySelf">
             <div className="imgMySelf">
-              <img
-                src="https://images.unsplash.com/photo-1473531761844-5a14668fc8f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmFjYXRpb24lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D"
-                alt=""
-              />
-              <img
-                src="https://plus.unsplash.com/premium_photo-1663090849746-f006a4e09b8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmFjYXRpb24lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D"
-                alt=""
-              />
+              <img src="/images/personal_gallery_3.png" alt="gallery_1" />
+              <img src="/images/personal_gallery_5.jpg" alt="gallery_5" />
             </div>
             <div className="textMySelf">
               <h1>Hi there, I'm Abraham.</h1>
@@ -74,10 +68,7 @@ export default function about() {
             </p>
           </div>
           <div className="thoughts">
-            <img
-              src="https://images.unsplash.com/photo-1567388543952-db93392e474a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGluZGl2aWR1YWx8ZW58MHx8MHx8fDA%3D"
-              alt=""
-            />
+            <img src="/images/personal_gallery_1.png" alt="gallery_1" />
             <h1>The world</h1>
             <p>
               The universe has always been my greatest muse, influencing every

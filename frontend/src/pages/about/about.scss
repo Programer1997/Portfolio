@@ -63,15 +63,21 @@
             border-radius: 10px;
             align-items: flex-start;
             margin-bottom: 5%;
+            //align-self: flex-start;
+            //max-height: max-content;
 
             .imgMySelf {
               width: 100%;
               display: flex;
               justify-content: space-evenly;
               margin-top: 5%;
+              max-height: 400px;
+              //max-height: 38%;
                 img{
                   width: 40%;
                   //padding: 20px;
+                  //max-height: 50%;
+                  object-fit: cover;
                   border-radius: 10%;
                   margin-top: 2%;
                   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Define la sombra con un desplazamiento vertical de 4px, un radio de difuminado de 8px y un color de sombra con una opacidad del 10% */
@@ -131,13 +137,14 @@
           background-color: white;
           border-radius: 10px;
           align-items: center;
-        
+          
             img { 
               width: 80%;
               border-radius: 5%;
               margin-top: 5%;
               padding: 10px;
               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              max-height: 300px;
 
             }
             h1 { 
