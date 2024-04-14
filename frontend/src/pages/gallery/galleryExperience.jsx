@@ -11,7 +11,7 @@ export default function GalleryExperience(props) {
             alt="something is wrong"
             className={props.size === "big" ? "bigImage" : ""}
           />
-          <h3 className="galleryTitle">{`Imagen ${props.index}`}</h3>
+          <h3 className="galleryTitle">{`${props.place}`}</h3>
         </div>
       }
     </>

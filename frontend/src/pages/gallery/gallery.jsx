@@ -15,7 +15,7 @@ export default function gallery() {
           <p className="text">Exploring the world through images.</p>
         </div>
         <div className="galleryExamples">
-          {Object.values(GalleryExperienceInfo.elements).map(
+          {Object.values(GalleryExperienceInfo.elements_2).map(
             (element, index) => {
               return (
                 <GalleryExperience
@@ -23,6 +23,7 @@ export default function gallery() {
                   imgUrl={element.img_Url}
                   size={element.imageSize}
                   index={index}
+                  place={element.place}
                 />
               );
             }
