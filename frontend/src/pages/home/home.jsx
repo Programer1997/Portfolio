@@ -44,6 +44,11 @@ const HomePage = (props) => {
             return <CompaniesImg key={element.id} imgUrl={element.img_Url} />;
           })}
         </div>
+        <div className="companiesExperiencie-mobile">
+          {Object.values(CompaniesInfo.elementos_3).map((element) => {
+            return <CompaniesImg key={element.id} imgUrl={element.img_Url} />;
+          })}
+        </div>
         <div className="workExperience" id="workSection">
           <div className="workText">
             <h2 className="workTitle">Work</h2>

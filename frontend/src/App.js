@@ -24,7 +24,10 @@ function App() {
           modalState = {modalMenu}
           setModalState = {setModalMenu}
         />} />
-        <Route path='/gallery' element={<Gallery/>} />
+        <Route path='/gallery' element={<Gallery  
+          modalState = {modalMenu}
+          setModalState = {setModalMenu}
+          />} />
         <Route path='/About' element={<About />} />
         {/*<Route path='/work/:id' element={<Work />} />*/}
         {<Route path='/work' element={<Work setSelectedElement = {setSelectedElement} selectedElement={selectedElement} />} />}

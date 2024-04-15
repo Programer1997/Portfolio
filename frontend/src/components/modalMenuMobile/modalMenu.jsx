@@ -1,16 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./modalMenu.scss";
 
-export default function modalMenu() {
+export default function modalMenu(props) {
+  const { modalState, setModalState } = props;
+
+  const handleClickModal = () => {
+    setModalState(false);
+  };
+
   return (
     <>
-      <div className="modal">
+      <div className={`modal ${modalState ? "open" : " "}`}>
         <ul>
-          <li>Work</li>
-          <li>Gallery</li>
-          <li>About</li>
-          <li>Resume</li>
+          <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+            <li onClick={handleClickModal}>Work</li>
+          </Link>
+          <Link to="/gallery" style={{ textDecoration: "none" }}>
+            <li onClick={handleClickModal}>Gallery</li>
+          </Link>
+          <Link to="/about" style={{ textDecoration: "none" }}>
+            <li onClick={handleClickModal}>About</li>
+          </Link>
+          <Link to="/resume" style={{ textDecoration: "none" }}>
+            <li onClick={handleClickModal}>Resume</li>
+          </Link>
         </ul>
+        {/*<button onClick={handleClickModal}>Close</button>*/}
       </div>
     </>
   );

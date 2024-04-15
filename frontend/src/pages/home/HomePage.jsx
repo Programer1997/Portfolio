@@ -2,6 +2,7 @@ import React from "react";
 import FooterPage from "../../components/Footer/footer.jsx";
 import HeaderPage from "../../components/navHeader/navHeader.jsx";
 import HomePage from "./home.jsx";
+import ModalMenuPage from "../../components/modalMenuMobile/modalMenu.jsx";
 
 export default function HomePageReal(props) {
   const { modalState, setModalState, setSelectedElement, selectedElement } =
@@ -21,6 +22,7 @@ export default function HomePageReal(props) {
          your image is in the public file*/
       }
       <FooterPage />
+      <ModalMenuPage modalState={modalState} setModalState={setModalState} />
     </>
   );
 }

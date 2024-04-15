@@ -5,7 +5,10 @@ import GalleryExperience from "./galleryExperience.jsx";
 import GalleryExperienceInfo from "../../mocks/imagesGallery.json";
 import "./gallery.scss";
 
-export default function gallery() {
+import ModalMenuPage from "../../components/modalMenuMobile/modalMenu.jsx";
+
+export default function gallery(props) {
+  const { modalState, setModalState } = props;
   return (
     <>
       <Header />
@@ -32,6 +35,7 @@ export default function gallery() {
       </div>
 
       <Footer />
+      <ModalMenuPage modalState={modalState} setModalState={setModalState} />
     </>
   );
 }
