@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/navHeader/navHeader.jsx";
+import HeaderPage from "../../components/navHeader/navHeader.jsx";
 import Footer from "../../components/Footer/footer";
 import GalleryExperience from "./galleryExperience.jsx";
 import GalleryExperienceInfo from "../../mocks/imagesGallery.json";
@@ -11,7 +11,7 @@ export default function gallery(props) {
   const { modalState, setModalState } = props;
   return (
     <>
-      <Header />
+      <HeaderPage modalState={modalState} setModalState={setModalState} />
       <div className="galleryExperience">
         <div className="galleryText">
           <h2 className="galleryTitle">Gallery</h2>

@@ -7,14 +7,17 @@ import SkillsComponent from "./skills";
 ///////
 import "./resume.scss";
 
-export default function resume() {
+import ModalMenuPage from "../../components/modalMenuMobile/modalMenu.jsx";
+
+export default function resume(props) {
   //const pdfUrl = "/pdfs/CV_Abraham_Velazquez _(IME).pdf";
   //console.log(Object.values(ResumeData.elements.experience));
   //console.log(Object.values(ResumeData.elements.skills.hability));
+  const { modalState, setModalState } = props;
 
   return (
     <>
-      <Header />
+      <Header modalState={modalState} setModalState={setModalState} />
       <div className="resume">
         <div className="header">
           <div className="name">
@@ -95,6 +98,7 @@ export default function resume() {
       </div>
 
       <Footer />
+      <ModalMenuPage modalState={modalState} setModalState={setModalState} />
     </>
   );
 }

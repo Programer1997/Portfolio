@@ -3,10 +3,13 @@ import Header from "../../components/navHeader/navHeader.jsx";
 import Footer from "../../components/Footer/footer";
 import "./about.scss";
 
-export default function about() {
+import ModalMenuPage from "../../components/modalMenuMobile/modalMenu.jsx";
+
+export default function about(props) {
+  const { modalState, setModalState } = props;
   return (
     <>
-      <Header />
+      <Header modalState={modalState} setModalState={setModalState} />
       <div className="about">
         <div className="aboutText">
           <h2 className="aboutTitle">About</h2>
@@ -87,6 +90,7 @@ export default function about() {
         </div>
       </div>
       <Footer />
+      <ModalMenuPage modalState={modalState} setModalState={setModalState} />
     </>
   );
 }

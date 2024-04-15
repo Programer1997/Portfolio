@@ -28,10 +28,16 @@ function App() {
           modalState = {modalMenu}
           setModalState = {setModalMenu}
           />} />
-        <Route path='/About' element={<About />} />
+        <Route path='/About' element={<About 
+          modalState = {modalMenu}
+          setModalState = {setModalMenu}
+        />} />
         {/*<Route path='/work/:id' element={<Work />} />*/}
         {<Route path='/work' element={<Work setSelectedElement = {setSelectedElement} selectedElement={selectedElement} />} />}
-        <Route exact path='/resume' element={<Resume />} />
+        <Route exact path='/resume' element={<Resume 
+          modalState = {modalMenu}
+          setModalState = {setModalMenu}
+        />} />
       </Routes>
     </BrowserRouter>
   );
