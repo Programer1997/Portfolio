@@ -33,7 +33,12 @@ function App() {
           setModalState = {setModalMenu}
         />} />
         {/*<Route path='/work/:id' element={<Work />} />*/}
-        {<Route path='/work' element={<Work setSelectedElement = {setSelectedElement} selectedElement={selectedElement} />} />}
+        {<Route path='/work' element={<Work 
+          setSelectedElement = {setSelectedElement} 
+          selectedElement={selectedElement} 
+          modalState = {modalMenu}
+          setModalState = {setModalMenu} 
+          />} />}
         <Route exact path='/resume' element={<Resume 
           modalState = {modalMenu}
           setModalState = {setModalMenu}

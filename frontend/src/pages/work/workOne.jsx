@@ -2,6 +2,7 @@ import React from "react";
 
 const WorkOne = (props) => {
   const { experienceProcessObject } = props;
+
   //console.log(experienceProcessObject);
 
   return (

@@ -8,11 +8,12 @@ import WorkOne from "./workOne.jsx";
 //import WorkTwo from "./workTwo.jsx";
 //import WorkThree from "./workThree.jsx";
 import workExperienceImages from "../../mocks/workExperienceImages.json";
+import ModalMenuPage from "../../components/modalMenuMobile/modalMenu.jsx";
 
 export default function Work(props) {
   //const [selectedElement, setSelectedElement] = useState("bathurst");
-  const { selectedElement } = props;
   //console.log(workExperienceImages.elements_2.holderTester.holderTesterProcess);
+  const { modalState, setModalState, selectedElement } = props;
 
   const selectedWork = () => {
     switch (selectedElement) {
@@ -47,9 +48,10 @@ export default function Work(props) {
 
   return (
     <>
-      <Header />
+      <Header modalState={modalState} setModalState={setModalState} />
       {selectedWork()}
       <Footer />
+      <ModalMenuPage modalState={modalState} setModalState={setModalState} />
     </>
   );
 }
