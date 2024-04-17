@@ -6,8 +6,7 @@
     justify-content: space-around;
     background-color: rgb(246,246,246);
     padding-top: 5%;
-    
-  
+
     .aboutText {
       width: 20%;
       display: flex;
@@ -167,3 +166,74 @@
     }
   }
   
+
+  @media screen and (max-width :431px){
+    .about{
+      flex-direction: column;
+      align-items: center;
+      
+      .aboutText {
+        width: 80%;
+        position: static;
+        margin-bottom: 5%;
+        p{
+          text-align: start;
+        }
+        div{
+          a{
+            font-size: 1.2em;
+          }
+        }
+      }
+      .aboutTopycs{
+        width: 80%;
+        .aboutMySelf{
+          width: 100%;
+          align-items: center;
+          .imgMySelf{
+            flex-direction: column;
+            max-height: 300px;
+            align-items: center;
+            img{
+              max-width: 80%;
+              max-height: 100%;
+            }
+            img:nth-of-type(2){
+              display: none;
+            }
+
+          }
+          .textMySelf{
+            h1{
+              font-size: 1.2em;
+            }
+            p{
+              font-size: 0.8em;
+            }
+          }
+        }
+        .believeIt{
+          width: 100%;
+          h1{
+            font-size: 1.2em;
+          }
+          p{
+            font-size: 0.8em;
+          }
+        }
+        .thoughts{
+          width: 100%;
+          img{
+            max-height: 200px;
+          }
+          h1{
+            font-size: 1.2em;
+          }
+          p{
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+
+  }

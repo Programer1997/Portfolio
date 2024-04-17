@@ -159,3 +159,118 @@
 
     }
 }
+@media screen and (max-width : 431px){
+    .resume{
+        .header{
+            flex-direction: column;
+            .name { 
+                width: 100%;
+                margin: 0;
+                h1{
+                    font-size: 1.7em;
+                }
+                p{
+                    font-size: 1em;
+                }
+            }
+            .personalInfo{
+                width: 100%;
+                //overflow: hidden;
+                align-items: flex-start;
+                margin-top: 5%;
+                p{
+                    font-size: 0.8em;
+                }
+            }
+
+        }
+        .presentation{
+            p{
+                font-size: 0.8em;
+                text-align: justify;
+            }
+        }
+        .experience{
+            flex-direction: column;
+            h4 { 
+                margin-bottom: 7%;
+            }
+            .experienceElements{
+                width: 100%;
+                .individualInformation{
+                    width: 100%;
+                    .job{
+                        h3{
+                            font-size: 1em;
+                            width: 75%;
+                            text-align: start;
+                        }
+                        p{
+                            font-size: 0.8em;
+                            width: 25%;
+                        }
+                    }
+                    .jobActivities{
+                        ul{
+                            li{
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .skills{
+            flex-direction: column;
+            h4{
+                margin-bottom: 7%;
+            }
+            .skillsList{
+                flex-direction: column;
+                width: 100%;
+                .listOne{
+                    width: 100%;
+                    li{
+                        text-align: start;
+                        font-size: 0.9em;
+                    }
+                }
+                .listTwo{
+                    width: 100%;
+                    li{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        .education{
+            h4{
+
+            }
+            .experienceElements{
+                .individualInformation{
+                    .job{
+                        h3{
+                            font-size: 1em;
+                            width: 75%;
+                            text-align: start;
+                        }
+                        p{
+                            font-size: 0.8em;
+                            width: 25%;
+                        }
+                    }
+                    .jobActivities{
+                        ul{
+                            li{
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
